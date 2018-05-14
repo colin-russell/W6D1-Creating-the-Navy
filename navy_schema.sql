@@ -1,13 +1,14 @@
 SELECT 'hello, SQLite';
 
 CREATE TABLE fleet (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT
 );
 
 CREATE TABLE ships (
   name TEXT,
   date_built TEXT,
-  ship_id INTEGER
+  fleet_id INTEGER
 );
 
 CREATE TABLE sailor (
@@ -18,7 +19,7 @@ CREATE TABLE sailor (
 );
 
 CREATE TABLE duties (
+  title TEXT,
   start_date TEXT,
   end_date TEXT,
-
 );
