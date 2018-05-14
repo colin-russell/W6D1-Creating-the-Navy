@@ -5,7 +5,8 @@ CREATE TABLE fleet (
   name TEXT
 );
 
-CREATE TABLE ships (
+CREATE TABLE ship (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
   date_built TEXT,
   fleet_id INTEGER
@@ -18,7 +19,7 @@ CREATE TABLE sailor (
   ship_id INTEGER
 );
 
-CREATE TABLE duties (
+CREATE TABLE duty (
   title TEXT,
   start_date TEXT,
   end_date TEXT,
